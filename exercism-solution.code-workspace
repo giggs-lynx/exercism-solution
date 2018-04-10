@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "rust/nth-prime"
+		},
+		{
+			"path": "rust/bob"
 		}
 	],
 	"settings": {}
