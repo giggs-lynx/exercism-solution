@@ -7,16 +7,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'hello-world'",
+            "name": "Debug unit tests in library 'raindrops'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
                     "--lib",
-                    "--package=hello-world"
+                    "--package=raindrops"
                 ],
                 "filter": {
-                    "name": "hello-world",
+                    "name": "raindrops",
                     "kind": "lib"
                 }
             },
@@ -26,16 +26,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug integration test 'hello-world'",
+            "name": "Debug integration test 'raindrops'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--test=hello-world",
-                    "--package=hello-world"
+                    "--test=raindrops",
+                    "--package=raindrops"
                 ],
                 "filter": {
-                    "name": "hello-world",
+                    "name": "raindrops",
                     "kind": "test"
                 }
             },

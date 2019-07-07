@@ -7,16 +7,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'hello-world'",
+            "name": "Debug unit tests in library 'reverse_string'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
                     "--lib",
-                    "--package=hello-world"
+                    "--package=reverse_string"
                 ],
                 "filter": {
-                    "name": "hello-world",
+                    "name": "reverse_string",
                     "kind": "lib"
                 }
             },
@@ -26,16 +26,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug integration test 'hello-world'",
+            "name": "Debug integration test 'reverse-string'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--test=hello-world",
-                    "--package=hello-world"
+                    "--test=reverse-string",
+                    "--package=reverse_string"
                 ],
                 "filter": {
-                    "name": "hello-world",
+                    "name": "reverse-string",
                     "kind": "test"
                 }
             },

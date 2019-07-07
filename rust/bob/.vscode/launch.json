@@ -7,16 +7,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'hello-world'",
+            "name": "Debug unit tests in library 'bob'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
                     "--lib",
-                    "--package=hello-world"
+                    "--package=bob"
                 ],
                 "filter": {
-                    "name": "hello-world",
+                    "name": "bob",
                     "kind": "lib"
                 }
             },
@@ -26,16 +26,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug integration test 'hello-world'",
+            "name": "Debug integration test 'bob'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--test=hello-world",
-                    "--package=hello-world"
+                    "--test=bob",
+                    "--package=bob"
                 ],
                 "filter": {
-                    "name": "hello-world",
+                    "name": "bob",
                     "kind": "test"
                 }
             },
