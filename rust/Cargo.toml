@@ -5,4 +5,5 @@ members = [
     "lucians-luscious-lasagna",
     "assembly-line",
     "semi-structured-logs",
+    "resistor-color"
 ]
