@@ -9,5 +9,6 @@ members = [
     "health-statistics",
     "low-power-embedded-game",
     "role-playing-game",
-    "magazine-cutout"
+    "magazine-cutout",
+    "short-fibonacci"
 ]
