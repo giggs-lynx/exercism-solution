@@ -7,5 +7,6 @@ members = [
     "semi-structured-logs",
     "resistor-color",
     "health-statistics",
-    "low-power-embedded-game"
+    "low-power-embedded-game",
+    "role-playing-game"
 ]
