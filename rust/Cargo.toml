@@ -10,5 +10,6 @@ members = [
     "low-power-embedded-game",
     "role-playing-game",
     "magazine-cutout",
-    "short-fibonacci"
+    "short-fibonacci",
+    "rpn-calculator",
 ]
