@@ -2,5 +2,6 @@
 
 members = [
     "hello-world",
-    "lucians-luscious-lasagna"
+    "lucians-luscious-lasagna",
+    "assembly-line",
 ]
