@@ -8,5 +8,6 @@ members = [
     "resistor-color",
     "health-statistics",
     "low-power-embedded-game",
-    "role-playing-game"
+    "role-playing-game",
+    "magazine-cutout"
 ]
