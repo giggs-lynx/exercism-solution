@@ -13,7 +13,7 @@ impl User {
         User {
             name: name,
             age: age,
-            weight: weight
+            weight: weight,
         }
     }
 

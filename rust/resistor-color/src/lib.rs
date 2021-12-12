@@ -1,5 +1,5 @@
-use int_enum::IntEnum;
 use enum_iterator::IntoEnumIterator;
+use int_enum::IntEnum;
 
 #[repr(usize)]
 #[derive(Debug, PartialEq, Clone, Copy, Eq, IntEnum, Ord, PartialOrd, IntoEnumIterator)]

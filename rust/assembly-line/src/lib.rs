@@ -9,7 +9,7 @@ pub fn production_rate_per_hour(speed: u8) -> f64 {
         1..=4 => 1.0,
         5..=8 => 0.9,
         9..=10 => 0.77,
-        _ => panic!()
+        _ => panic!(),
     };
 
     base * speed as f64 * faulty
