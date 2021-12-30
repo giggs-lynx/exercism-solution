@@ -1,9 +1,7 @@
-extern crate chrono;
-use chrono::{DateTime, Utc, Duration};
+use time::PrimitiveDateTime as DateTime;
+use std::time::Duration;
 
-
-// Returns a Utc DateTime one billion seconds after start.
-pub fn after(start: DateTime<Utc>) -> DateTime<Utc> {
-    let offset: i64 = 1_000_000_000;
-    start + Duration::seconds(offset)
+// Returns a DateTime one billion seconds after start.
+pub fn after(start: DateTime) -> DateTime {
+    start + Duration::from_secs(1_000_000_000)
 }
