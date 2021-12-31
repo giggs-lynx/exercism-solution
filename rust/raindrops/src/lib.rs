@@ -1,4 +1,4 @@
-pub fn raindrops(n: usize) -> String {
+pub fn raindrops(n: u32) -> String {
     let arr = [(3, "Pling"), (5, "Plang"), (7, "Plong")];
     let mut s = String::new();
 
@@ -8,9 +8,9 @@ pub fn raindrops(n: usize) -> String {
         }
     }
 
-    if s.capacity() == 0 {
-        s.push_str(&n.to_string());
+    if s.is_empty() {
+        n.to_string()
+    } else {
+        s
     }
-
-    return s;
 }
