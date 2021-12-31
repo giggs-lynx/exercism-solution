@@ -15,4 +15,5 @@ members = [
     "reverse-string",
     "gigasecond",
     "leap",
+    "nth-prime",
 ]
