@@ -1,34 +1,20 @@
-pub fn nth(n: u32) -> Option<u32> {
+pub fn nth(n: u32) -> u32 {
+    let mut primes = vec![2u32, 3];
 
-    if n == 0 {
-        return None
-    }
+    while (primes.len() - 1) < (n as usize) {
+        let mut candidate: u32 = *primes.last().unwrap();
 
-    let mut primes: Vec<u32> = Vec::new();
-    primes.push(2);
-
-    while primes.len() < (n as usize) {
-        let last_prime = primes[primes.len() - 1];
-
-        let mut candidate = (last_prime / 2) * 2 + 1;
         loop {
+            candidate += 2;
 
-            let mut is_prime: bool = true;
-            for p in &primes {
-                if candidate % p == 0 {
-                    is_prime = false;
-                    break;
-                }
-            }
-            
-            if is_prime {
+            let factor = primes.iter().find(|p| candidate % *p == 0);
+
+            if factor.is_none() {
                 primes.push(candidate);
                 break;
-            } else {
-                candidate += 2;
             }
         }
     }
 
-    Some(primes[primes.len() - 1])
+    primes[n as usize]
 }
