@@ -16,4 +16,5 @@ members = [
     "gigasecond",
     "leap",
     "nth-prime",
+    "raindrops",
 ]

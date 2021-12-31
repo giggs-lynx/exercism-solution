@@ -12,5 +12,5 @@ pub fn raindrops(n: usize) -> String {
         s.push_str(&n.to_string());
     }
 
-    return s
+    return s;
 }
