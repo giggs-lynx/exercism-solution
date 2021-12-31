@@ -17,4 +17,5 @@ members = [
     "leap",
     "nth-prime",
     "raindrops",
+    "bob",
 ]

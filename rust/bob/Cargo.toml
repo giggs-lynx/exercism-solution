@@ -1,3 +1,4 @@
 [package]
+edition = "2021"
 name = "bob"
-version = "1.2.0"
+version = "1.6.0"

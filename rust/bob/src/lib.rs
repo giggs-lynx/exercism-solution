@@ -1,4 +1,4 @@
-pub fn reply(message: &str) -> &str {   
+pub fn reply(message: &str) -> &str {
     let msg = message.trim();
 
     return match msg {
@@ -11,6 +11,9 @@ pub fn reply(message: &str) -> &str {
 }
 
 fn is_yell(message: &str) -> bool {
-    let temp: String = message.chars().filter(|c| c.is_alphabetic()).collect::<String>() ;
+    let temp: String = message
+        .chars()
+        .filter(|c| c.is_alphabetic())
+        .collect::<String>();
     !temp.is_empty() && temp.chars().all(|c| c.is_uppercase())
 }
