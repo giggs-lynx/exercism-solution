@@ -6,26 +6,9 @@ pub struct Clock {
 
 impl Clock {
     pub fn new(hours: i32, minutes: i32) -> Self {
-        let mut h = hours;
-        let mut m = minutes;
-
-        let mut add_hour = m / 60;
-
-        m %= 60;
-
-        if m < 0 {
-            m += 60;
-            add_hour -= 1;
-        }
-
-        h += add_hour;
-        h %= 24;
-
-        h += if h < 0 { 24 } else { 0 };
-
         Clock {
-            hours: h,
-            minutes: m,
+            hours: (hours + minutes.div_euclid(60)).rem_euclid(24),
+            minutes: minutes.rem_euclid(60),
         }
     }
 
