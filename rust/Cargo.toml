@@ -19,4 +19,5 @@ members = [
     "raindrops",
     "bob",
     "clock",
+    "anagram",
 ]
